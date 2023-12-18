@@ -96,3 +96,16 @@ int main() {
 
 
 */
+
+/*
+
+In this version of the program:
+
+The pointer ptr is removed.
+
+The program prints the address of data using &data. This demonstrates that even without pointers, 
+we can still obtain the address of a variable.
+
+The value of data is accessed and modified directly, without the use of pointers.
+
+*/
