@@ -34,7 +34,7 @@
 
 int main() {
     int rows = 3, cols = 4;
-    int **array;
+    int **array = NULL;
     int i, j;
 
     // Allocate memory for rows, each element is a pointer to int
