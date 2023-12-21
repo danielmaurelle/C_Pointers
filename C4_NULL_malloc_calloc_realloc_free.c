@@ -66,8 +66,8 @@ int main() {
     int *cptr = (int*) calloc(5, sizeof(int));
     if (cptr == NULL) {
         printf("Memory allocation with calloc failed\n");
-        free(ptr);
-        ptr = NULL; // Set pointer to NULL after freeing
+        free(cptr);
+        cptr = NULL; // Set pointer to NULL after freeing
         return 1;
     }
 
