@@ -1,8 +1,10 @@
 /*
  * @Author: Daniel Maurelle 
  * @Email: daniel.maurelle@gmail.com
- * @Date: 12-17-2023 12:54:23 
- * @Description: 7-Void pointers
+ * Linkedin: linkedin.com/in/daniel-maurelle-717bb9256
+ * Youtube: https://youtube.com/playlist?list=PLDqCEJxpkYKCzZSwAz-2PpzcwMDY11NGp&si=HRSvwoUxsEBtFsfI
+ * @Date: 12-18-2023 18:20:55 
+ * @Description: 1-Sample code basic banking system
  * 
  * MIT License
  * 

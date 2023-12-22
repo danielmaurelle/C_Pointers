@@ -1,7 +1,10 @@
 /*
  * @Author: Daniel Maurelle 
- * @Date: 12-16-2023 12:11:51 
- * @Description: 1-Understanding pointers
+ * @Email: daniel.maurelle@gmail.com
+ * Linkedin: linkedin.com/in/daniel-maurelle-717bb9256
+ * Youtube: https://youtube.com/playlist?list=PLDqCEJxpkYKCzZSwAz-2PpzcwMDY11NGp&si=HRSvwoUxsEBtFsfI
+ * @Date: 12-18-2023 18:20:55 
+ * @Description: 1-Sample code basic banking system
  * 
  * MIT License
  * 
