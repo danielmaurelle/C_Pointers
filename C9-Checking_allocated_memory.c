@@ -63,6 +63,8 @@ you should always check if the allocation was successful by verifying the pointe
 
 */
 
+/*
+
 int main() {
 
     int *ptr = malloc(sizeof(int));
@@ -75,6 +77,8 @@ int main() {
 
 }
 
+*/
+
 /*
 
 Use of Flags or Structs: In some cases, you might use a structure that contains a flag or status field along with the pointer, 
@@ -82,6 +86,7 @@ indicating whether the pointer has been allocated and set.
 
 */
 
+/*
 int main() {
 
     typedef struct {
@@ -93,15 +98,65 @@ int main() {
     ip.ptr = malloc(sizeof(int));
     ip.is_allocated = (ip.ptr != NULL);
 
-
+    
 }
+
+*/
 
 /*
 
-Valgrind and Other Memory Debugging Tools: Tools like Valgrind can be used to detect memory leaks, use of uninitialized memory, 
+Valgrind(Windows/Mac) and Other Memory Debugging Tools like Leaks(on Mac): Tools like Valgrind/Leaks can be used to detect memory leaks, use of uninitialized memory, 
 and other memory-related issues. They are very useful during the development phase to ensure proper memory management.
 Custom Memory Management Functions: In some scenarios, you might implement custom allocation and deallocation functions 
 that internally track allocations, initializations, and deallocations.
+
+*/
+
+/*
+
+// Custom memory allocation function
+void* custom_malloc(size_t size) {
+    void *ptr = malloc(size);
+    if (ptr) {
+        printf("Allocated %zu bytes at %p\n", size, ptr);
+    } else {
+        printf("Memory allocation failed\n");
+    }
+    return ptr;
+}
+
+// Custom memory initialization function
+void* custom_memset(void *ptr, int value, size_t num) {
+    if (ptr) {
+        memset(ptr, value, num);
+        printf("Initialized memory at %p with %d for %zu bytes\n", ptr, value, num);
+    }
+    return ptr;
+}
+
+// Custom memory deallocation function
+void custom_free(void *ptr) {
+    if (ptr) {
+        free(ptr);
+        printf("Freed memory at %p\n", ptr);
+    }
+}
+
+int main() {
+    // Example usage
+    int *numbers = (int*) custom_malloc(10 * sizeof(int));
+    if (numbers) {
+        custom_memset(numbers, 0, 10 * sizeof(int));
+        // Use the allocated memory...
+        custom_free(numbers);
+    }
+    return 0;
+}
+
+*/
+
+
+/*
 
 Remember, in C, direct memory management is the programmer's responsibility, and it requires careful handling to avoid issues 
 like memory leaks, dangling pointers, and undefined behavior. The language itself does not provide built-in mechanisms 
