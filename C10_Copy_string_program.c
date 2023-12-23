@@ -65,6 +65,8 @@ The copied string is then printed to the standard output.
 
 */
 
+/*
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -97,6 +99,7 @@ int main() {
     return 0;
 }
 
+*/
 
 /*
 

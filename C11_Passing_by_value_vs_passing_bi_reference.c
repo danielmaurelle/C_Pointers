@@ -107,6 +107,7 @@ PASSING BY REFERENCE
 
 */
 
+/*
 
 #include <stdio.h>
 
@@ -132,6 +133,8 @@ int main() {
     return 0;
 }
 
+*/
+
 /*
 
 The modifyArray function receives a pointer to the first element of array.
@@ -148,6 +151,8 @@ The original array elements are modified.
 ADDITIONAL EXAMPLE OF PASSING BY REFERENCE
 
 */
+
+/*
 
 #include <stdio.h>
 
@@ -168,6 +173,8 @@ int main() {
 
     return 0;
 }
+
+*/
 
 /*
 
@@ -209,6 +216,8 @@ EXAMPLE ILLUSTRATION
 
 */
 
+/*
+
 #include <stdio.h>
 
 void modifyValue(int *ptr) {
@@ -225,6 +234,8 @@ int main() {
     printf("After: %d\n", value); // The original value is modified
     return 0;
 }
+
+*/
 
 /*
 
