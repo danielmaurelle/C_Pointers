@@ -104,6 +104,8 @@ QSORT ASCENDING / DESCENDING
 
 */
 
+/*
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -165,6 +167,8 @@ int main() {
     return 0;
 }
 
+*/
+
 /*
 
 This program:
@@ -184,6 +188,8 @@ Uses qsort() with the selected comparison function to sort the array.
 DISPATCH TABLES
 
 */
+
+/*
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -239,6 +245,8 @@ int main() {
 
     return 0;
 }
+
+*/
 
 /*
 
